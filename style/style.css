@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #715e85;
+}
+
+.relogio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+    background-color: #532b80;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    line-height: 350px;
+    border-radius: 350px;
+    color: #cfa3ff;
+    font-size: 5rem;
+    font-family: "Titillium Web", sans-serif;
+    border: 5px solid #60BA8C;
+}
+
+footer{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: #1d1a82;
+    font-family: "Domine", serif;
+}
