@@ -1,3 +1,20 @@
+const relogios = document.getElementById("modelos");
+const relogio = document.querySelectorAll("#modelos div")
+
+let idx = 0;
+
+function carrossel(){
+    idx++;
+
+    if(idx > relogio.length - 11){
+        idx = 0;
+    }
+
+    relogios.style.transform = `translateX(${(-idx * 480)}px)`;
+}
+
+setInterval(carrossel, 10000);
+
 function atualizarTempo(){
     const display = document.querySelector(".display")
 

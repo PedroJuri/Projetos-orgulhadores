@@ -3,15 +3,31 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #715e85;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
+/*Carrosel*/
+
+.carrossel{
+    overflow: hidden;
+    height: 500px;
+    width: 435px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
 
 /*Relógio Digital*/
 
@@ -24,7 +40,7 @@ body{
 }
 
 .display{
-    margin: 10px auto 0 auto;
+    margin: 10px 50px 0 50px;
     background-color: #532b80;
     width: 350px;
     height: 350px;
@@ -42,21 +58,30 @@ footer{
     margin: 2rem auto 0 auto;
     color: #1d1a82;
     font-family: "Domine", serif;
+    text-align: center;
 }
 
 
 /*Relógio Analógico*/
 
 .relogios h1{
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     font-family: "Domine", serif;
     font-size: 1.3rem;
     color: #1d1a82;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1:nth-child(2){
+    margin: 30px auto 30px 50px;
 }
 
 .analogico{
-    margin: 0 auto 50px auto;
+    margin: 0 15px 50px 75px;
     width: 350px;
     height: 350px;
     border-radius: 350px;
@@ -138,4 +163,3 @@ footer{
     z-index: 12;
     border-radius: 6px 6px 0 0;
 }
-
