@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <script src="https://kit.fontawesome.com/9d09109ce0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <div class="conteudo">
+            <div class="calculadora">
+                <p class="result" id="resultado"></p>
+                <table>
+                    <tr>
+                        <td><button class="btn ac" style="width: 106px;" onclick="clean()">AC</button></td>
+                        <td><button class="btn del" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button></td>
+                        <td><button class="btn operador" onclick="insert('/')"><i class="fa-solid fa-divide"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('7')">7</button></td>
+                        <td><button class="btn" onclick="insert('8')">8</button></td>
+                        <td><button class="btn" onclick="insert('9')">9</button></td>
+                        <td><button class="btn operador" onclick="insert('*')"><i class="fa-solid fa-xmark"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('4')">4</button></td>
+                        <td><button class="btn" onclick="insert('5')">5</button></td>
+                        <td><button class="btn" onclick="insert('6')">6</button></td>
+                        <td><button class="btn operador" onclick="insert('-')"><i class="fa-solid fa-minus"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('1')">1</button></td>
+                        <td><button class="btn" onclick="insert('2')">2</button></td>
+                        <td><button class="btn" onclick="insert('3')">3</button></td>
+                        <td><button class="btn operador" onclick="insert('+')"><i class="fa-solid fa-plus"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn" onclick="insert('0')">0</button></td>
+                        <td><button class="btn" onclick="insert('.')">.</button></td>
+                        <td><button class="btn igual" style="width: 106px;" onclick="confirma()"><i class="fa-solid fa-equals"></i></button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <script src="scrpit.js"></script>
+
+    </body>
+</html>
