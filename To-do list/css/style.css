@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark: #30353d;
+    --darker: #191e25;
+    --darkest: #0b0f17;
+    --grey: #75787d;
+    --light: #f1f0f0;
+    --cyan: #16F7F5;
+    --blue: #13A5D6;
+    --red: #d01b1b;
+    --darkred: #6c0f0f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+#form-lista{
+    display: flex;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#input-lista{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#input-lista:placeholder{
+    color: var(--grey);
+}
+
+#input-envio{
+    color: var(--cyan);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--cyan), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#input-envio:hover{
+    opacity: 0.8;
+}
+
+#input-envio:active{
+    opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1 rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.listas{
+    padding: 1rem;   
+}
+
+.listas h2{
+    font-size: 1.5;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+.tarefas .tarefa{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tarefas .tarefa .conteudo{
+    flex: 1 1 0%;
+}
+
+.tarefas .tarefa .conteudo .texto{
+    color: var(--light);
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.tarefas .tarefa .conteudo .texto:not(:read-only){
+    color: var(--cyan); 
+}
+
+.tarefas .tarefa .acoes{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.tarefa .acoes button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.tarefa .acoes button:hover{
+    opacity: 0.8;
+}
+
+.tarefa .acoes button:active{
+    opacity: 0.6;
+}
+
+.tarefa .acoes .editar{
+    background-image: linear-gradient(to right, var(--cyan), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tarefa .acoes .deletar{
+    background-image: linear-gradient(to right, var(--red), var(--darkred));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
