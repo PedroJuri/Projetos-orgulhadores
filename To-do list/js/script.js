@@ -1,3 +1,10 @@
+const $html = document.querySelector('html');
+const $check = document.querySelector('#switch')
+
+$check.addEventListener('change', function(){
+    $html.classList.toggle('light-mode');
+})
+
 window.addEventListener('load', () =>{
 
     const form = document.querySelector("#form-listas");

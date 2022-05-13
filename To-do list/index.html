@@ -7,10 +7,17 @@
         <title>To-do List</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body class="dark-mode">
 
         <header>
-            <h1>Listas</h1>
+            <div class="container">
+                <h1>Listas</h1>
+                <label for="switch">
+                    <span>Modo Claro</span>
+                    <input class="checkbox" type="checkbox" name="switch" id="switch">
+                </label>
+            </div>
+
             <form id="form-listas">
                 <input type="text" id="input-lista" placeholder="O que irá fazer hoje?">
                 <input type="submit" id="input-envio" value="Adicionar às tarefas">

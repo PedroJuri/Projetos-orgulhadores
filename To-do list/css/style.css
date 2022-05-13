@@ -12,6 +12,18 @@
     --darkred: #6c0f0f;
 }
 
+.light-mode:root{
+    --dark: #dadde2;
+    --darker: #bec0c5;
+    --darkest: #6b6d71;
+    --grey: #1c1c1d;
+    --light: #12111a;
+    --cyan: #3b9e9b;
+    --blue: #25a0c6;
+    --red: #a41a1a;
+    --darkred: #be2e2e;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -49,6 +61,20 @@ input, button{
     border: none;
     outline: none;
     background: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox{
+    appearance: checkbox;
+}
+
+label span{
+    color: var(--light);
 }
 
 #input-lista{
