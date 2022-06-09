@@ -9,6 +9,10 @@ body{
     background-color: #966E0B;
 }
 
+header.inicio{
+    justify-content: space-around;    
+}
+
 .calculadora{
     width: 250px;
     position: absolute;

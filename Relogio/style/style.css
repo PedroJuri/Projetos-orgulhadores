@@ -8,9 +8,14 @@
 
 body{
     background-color: #715e85;
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Header*/
+
+header.inicio{
+    justify-content: space-around;
 }
 
 /*Carrosel*/
@@ -25,8 +30,13 @@ body{
 
 .container{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main{
+    width: 400px;
+    height: 400px;
 }
 
 /*Relógio Digital*/
@@ -40,7 +50,7 @@ body{
 }
 
 .display{
-    margin: 10px 50px 0 50px;
+    margin: 25px;
     background-color: #532b80;
     width: 350px;
     height: 350px;
@@ -77,11 +87,11 @@ footer{
 }
 
 h1:nth-child(2){
-    margin: 30px auto 30px 50px;
+    margin: 30px auto 30px 0px;
 }
 
 .analogico{
-    margin: 0 15px 50px 75px;
+    margin: auto;
     width: 350px;
     height: 350px;
     border-radius: 350px;
@@ -162,4 +172,44 @@ h1:nth-child(2){
     background: #dbf227;
     z-index: 12;
     border-radius: 6px 6px 0 0;
+}
+
+@media (max-width: 800px){
+    .display{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+        font-size: 50px;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .analogico{
+        width: 64.5%;
+        height: 64.5%;
+        margin: 0;
+        position: relative;
+        top: -70px;
+    }
+
+    .hr:before{
+        width: 4px;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .mn:before{
+        width: 2px;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .sg:before{
+        width: 1px;
+        border-radius: 3px 3px 0 0;
+    }
 }

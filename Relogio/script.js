@@ -1,6 +1,3 @@
-const relogios = document.getElementById("modelos");
-const relogio = document.querySelectorAll("#modelos div")
-
 let idx = 0;
 
 function carrossel(){
@@ -12,8 +9,6 @@ function carrossel(){
 
     relogios.style.transform = `translateX(${(-idx * 480)}px)`;
 }
-
-setInterval(carrossel, 10000);
 
 function atualizarTempo(){
     const display = document.querySelector(".display")

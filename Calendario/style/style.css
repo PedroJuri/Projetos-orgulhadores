@@ -10,6 +10,13 @@ html{
     font-size: 62.5%;
 }
 
+/*Header*/
+
+header.inicio{
+    justify-content: space-around;
+    background-color: #12121f;
+}
+
 /*Estilo Central*/
 
 .container{
@@ -18,7 +25,7 @@ html{
     background-color: #12121f;
     color: #eeeeee;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 

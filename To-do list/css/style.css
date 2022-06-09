@@ -38,14 +38,26 @@ body{
     background: var(--dark);
 }
 
-header{
+header.inicio{
+    justify-content: space-around;
+}
+
+button.cor{
+    color: #78cbbd;
+}
+
+button.cor:hover{
+    color: #ade6d1;
+}
+
+.header{
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
 }
 
-header h1{
+.header h1{
     font-size: 2.5rem;
     font-weight: 300;
     color: var(--grey);
