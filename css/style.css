@@ -45,6 +45,11 @@ html.alt{
     animation: colors 15s ease infinite;
 }
 
+.home body{
+    margin: 0 35px;
+    max-width: 1080px;
+}
+
 body{
     font-family: "Libre Franklin", sans-serif;
     padding-bottom: 30px;
@@ -192,4 +197,35 @@ button.cor:hover{
 
 .info{
     padding: 2px;
+}
+
+@media (max-width: 960px){
+    .conteudo{
+        padding: 0 10px;
+    }
+    .card{
+        width: 450px;
+        height: 270px;
+        border: 4px solid #F2B6C6;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card img{
+        width: 450px;
+        height: 225px;
+        border-radius: 2.5px 2.5px 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        width: 225px;
+        height: 150px;
+    }
+    .card img{
+        width: 225px;
+        height: 110px;
+    }
 }
